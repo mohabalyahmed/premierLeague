@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C7924862-AA0E-496A-998C-148041A18FE0"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F1A63FC-280C-4141-B629-DD09444FB70D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PremierLeague/MatchViewModel/MatchesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "fetchMatches()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3002CC97-090B-4050-A75F-87BD52A8A254"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PremierLeague/MatchViewModel/MatchesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "fetchMatches()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3002CC97-090B-4050-A75F-87BD52A8A254 - 1b44fd3ff1b85556"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PremierLeague.MatchesViewModel.fetchMatches() -&gt; ()"
+                  moduleName = "PremierLeague"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohabaly/Documents/PremierLeague/PremierLeague/PremierLeague/MatchViewModel/MatchesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "3002CC97-090B-4050-A75F-87BD52A8A254 - b9e8268f3a7a34a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;PremierLeague.ResponseModel, PremierLeague.NetworkError&gt;) -&gt; () in PremierLeague.MatchesViewModel.fetchMatches() -&gt; ()"
+                  moduleName = "PremierLeague"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohabaly/Documents/PremierLeague/PremierLeague/PremierLeague/MatchViewModel/MatchesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "180">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D235DE68-72F2-4444-9175-F205681D12F0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PremierLeague/MatchViewModel/MatchesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "fetchMatches()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
