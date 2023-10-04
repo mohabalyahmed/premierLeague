@@ -8,14 +8,23 @@
 import Foundation
 import Alamofire
 
+protocol MatchesViewModelDelegate: AnyObject {
+    func didFetchMatches(matches: [Matches])
+}
 class MatchesViewModel {
     var matches: [Matches] = []
+    weak var delegate: MatchesViewModelDelegate?
     
     func fetchMatches() {
-        NetworkHandler.getMatches { result in
+        NetworkHandler.getMatches { [weak self] result in
             switch result {
             case .success(let data):
-                print("hoba count \(data.matches.count)")
+                if let matches = data.matches {
+                    self?.matches = matches
+                    self?.delegate?.didFetchMatches(matches: matches)
+                }
+//                print("hoba count \(data.matches?.count)")
+//                self.matches = data.matches ?? []
             case .failure(let error):
                 print("error")
             }
