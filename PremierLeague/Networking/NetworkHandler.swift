@@ -25,14 +25,10 @@ public class NetworkHandler {
         AF.request(NetworkConstant.shared.apiUrl, headers: headers).responseDecodable(of: ResponseModel.self) { response in
             switch response.result {
             case .success(let value):
-                do {
-                    completionHandler(.success(value))
-                } catch let error {
-                    // Handle decoding error and pass an appropriate error to the completion handler
-                    completionHandler(.failure(.canNotParseData))
-                }
+                completionHandler(.success(value))
             case .failure(let error):
                 // Handle the network request error and pass an appropriate error to the completion handler
+                print("Network Request Error: \(error.localizedDescription)")
                 completionHandler(.failure(.urlError))
             }
         }

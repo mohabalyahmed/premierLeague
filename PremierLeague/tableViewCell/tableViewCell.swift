@@ -13,7 +13,8 @@ class tableViewCell: UITableViewCell {
     @IBOutlet weak var awayLabel: UILabel!
     @IBOutlet weak var homeScore: UILabel!
     @IBOutlet weak var awayScore: UILabel!
-    
+    @IBOutlet weak var separatorView: UILabel!
+    @IBOutlet weak var addToFavBtn: UIButton!
     static let identifier = "tableViewCell"
     
     static func nib() -> UINib {

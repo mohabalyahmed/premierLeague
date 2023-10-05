@@ -23,15 +23,11 @@ class MatchesViewModel {
                     self?.matches = matches
                     self?.delegate?.didFetchMatches(matches: matches)
                 }
-//                print("hoba count \(data.matches?.count)")
-//                self.matches = data.matches ?? []
-            case .failure(let error):
+            case .failure(_):
                 print("error")
             }
         }
     }
-    
-    // Provide convenience methods to access match information
     
     func numberOfMatches() -> Int {
         return matches.count
@@ -42,7 +38,5 @@ class MatchesViewModel {
             return nil
         }
         return matches[index]
-    }
-    
-    // Additional methods or properties as needed
+    }    
 }

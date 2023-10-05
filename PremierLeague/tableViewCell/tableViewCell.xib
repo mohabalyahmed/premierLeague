@@ -1,72 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="tableViewCell" customModule="PremierLeague" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="352" height="87"/>
+            <rect key="frame" x="0.0" y="0.0" width="400" height="120"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="352" height="87"/>
+                <rect key="frame" x="0.0" y="0.0" width="400" height="120"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="U5D-hW-cYC">
-                        <rect key="frame" x="0.0" y="0.0" width="352" height="87"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Burnley FC" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sav-g0-g1c">
+                        <rect key="frame" x="10" y="30" width="151" height="60"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manchester City FC" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCR-S1-KkR">
+                        <rect key="frame" x="239.33333333333337" y="30" width="150.66666666666663" height="60"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UjS-hT-ISQ">
+                        <rect key="frame" x="171" y="50" width="58.333333333333343" height="20.333333333333329"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burnley FC" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sav-g0-g1c">
-                                <rect key="frame" x="0.0" y="0.0" width="83.333333333333329" height="87"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvw-dT-zUG">
-                                <rect key="frame" x="112.33333333333333" y="0.0" width="24.666666666666671" height="87"/>
+                                <rect key="frame" x="0.0" y="0.0" width="24.666666666666668" height="20.333333333333332"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQQ-qC-pr5">
-                                <rect key="frame" x="166" y="0.0" width="4.6666666666666572" height="87"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQQ-qC-pr5">
+                                <rect key="frame" x="24.666666666666657" y="0.0" width="4.6666666666666679" height="20.333333333333332"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsD-Wh-4zE">
-                                <rect key="frame" x="199.33333333333334" y="0.0" width="29" height="87"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manchester City FC" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCR-S1-KkR">
-                                <rect key="frame" x="257.33333333333331" y="0.0" width="94.666666666666686" height="87"/>
+                                <rect key="frame" x="29.333333333333343" y="0.0" width="29" height="20.333333333333332"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSe-r2-gFq">
+                        <rect key="frame" x="185" y="10" width="30" height="35"/>
+                        <color key="tintColor" systemColor="systemYellowColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
+                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="15"/>
+                        </buttonConfiguration>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="U5D-hW-cYC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="27r-Tw-mWT"/>
-                    <constraint firstAttribute="trailing" secondItem="U5D-hW-cYC" secondAttribute="trailing" id="EV9-MQ-cEi"/>
-                    <constraint firstAttribute="bottom" secondItem="U5D-hW-cYC" secondAttribute="bottom" id="fqj-ko-7Wp"/>
-                    <constraint firstItem="U5D-hW-cYC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uns-Fl-EPS"/>
+                    <constraint firstItem="UjS-hT-ISQ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="99X-Z2-cDI"/>
+                    <constraint firstAttribute="trailing" secondItem="dCR-S1-KkR" secondAttribute="trailing" constant="10" id="J9q-I5-9rs"/>
+                    <constraint firstItem="UjS-hT-ISQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WWM-mF-fMq"/>
+                    <constraint firstItem="NSe-r2-gFq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="YzB-kS-8vD"/>
+                    <constraint firstItem="UjS-hT-ISQ" firstAttribute="leading" secondItem="sav-g0-g1c" secondAttribute="trailing" constant="10" id="ZgL-yg-XT5"/>
+                    <constraint firstAttribute="trailing" secondItem="NSe-r2-gFq" secondAttribute="trailing" constant="185" id="ddn-zk-kuV"/>
+                    <constraint firstItem="dCR-S1-KkR" firstAttribute="leading" secondItem="UjS-hT-ISQ" secondAttribute="trailing" constant="10" id="h1S-qg-IIt"/>
+                    <constraint firstAttribute="bottom" secondItem="sav-g0-g1c" secondAttribute="bottom" constant="30" id="hsO-p8-EDS"/>
+                    <constraint firstItem="UjS-hT-ISQ" firstAttribute="top" secondItem="NSe-r2-gFq" secondAttribute="bottom" constant="5" id="ieR-dA-sHe"/>
+                    <constraint firstItem="sav-g0-g1c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="jKj-cf-Bdd"/>
+                    <constraint firstAttribute="bottom" secondItem="dCR-S1-KkR" secondAttribute="bottom" constant="30" id="mvB-Ib-f5x"/>
+                    <constraint firstItem="dCR-S1-KkR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="n4r-cT-wpS"/>
+                    <constraint firstItem="NSe-r2-gFq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="185" id="tWc-9W-liB"/>
+                    <constraint firstItem="sav-g0-g1c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="yh4-LR-2lR"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="addToFavBtn" destination="NSe-r2-gFq" id="udg-Ly-cSO"/>
                 <outlet property="awayLabel" destination="dCR-S1-KkR" id="2am-NG-OnI"/>
                 <outlet property="awayScore" destination="wsD-Wh-4zE" id="Rfl-W8-VB7"/>
                 <outlet property="homeLabel" destination="sav-g0-g1c" id="KsY-Dr-dyV"/>
                 <outlet property="homeScore" destination="Fvw-dT-zUG" id="bfM-m6-P3u"/>
+                <outlet property="separatorView" destination="bQQ-qC-pr5" id="shF-Vt-nDW"/>
             </connections>
-            <point key="canvasLocation" x="163.35877862595419" y="35.563380281690144"/>
+            <point key="canvasLocation" x="163.35877862595419" y="35.211267605633807"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
